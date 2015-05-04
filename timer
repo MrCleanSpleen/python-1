@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+
+print('Would you like to run Nyan?')
+a = input(c.red + '> ' + c.yellow)
+if a != 'yes':
+    exit()
+
+while True:
+    print(c.random_color() +'Nyan', end=' '*r.randint(1, 12))
+
+
