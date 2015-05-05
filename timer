@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 import colors as c
 import random as r
+import time as t
 
-print('Would you like to run Nyan?')
-a = input(c.red + '> ' + c.yellow)
-if a != 'yes':
-    exit()
+seconds = 1
 
 while True:
-    print(c.random_color() +'Nyan', end=' '*r.randint(1, 12))
-
+    t.sleep(1)
+    print(c.random_color() + str(seconds) + c.random_color() + ' seconds')
+    seconds += 1
 
