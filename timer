@@ -5,6 +5,6 @@ import time as t
 seconds = 1
 while True:
     t.sleep(1)
-    print(c.random_color() + str(seconds) + c.random_color() + ' seconds')
+    print(c.random_color() + str(seconds) + c.cyan() + ' seconds')
     seconds += 1
 
