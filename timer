@@ -2,9 +2,7 @@
 import colors as c
 import random as r
 import time as t
-
 seconds = 1
-
 while True:
     t.sleep(1)
     print(c.random_color() + str(seconds) + c.random_color() + ' seconds')
