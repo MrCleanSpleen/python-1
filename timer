@@ -2,12 +2,28 @@
 import colors as c
 import random as r
 import time as t
-
-seconds = 1
-
+days = 0
+hours = 0
+minutes = 0
+hundreths = 0
+seconds = 0
 print(c.clear)
 while True:
-    t.sleep(1)
-    print(c.random_color() + str(seconds) + c.random_color() + ' seconds')
-    seconds += 1
+    print(c.clear + c.red + '[Press ctrl+c to quit]' + c.reset)
+    print(str(days) + '--' + str(hours) + ':' + str(minutes) + ':' + str(seconds) + ':' + str(hundreths)) 
+    t.sleep(0.01)
+    hundreths += 1
+    if hundreths == 100:
+        hundreths = 0
+        seconds += 1
+        print(str(seconds) + 'seconds')
+    if seconds == 60:
+        seconds = 0
+        minutes += 1
+    if minutes == 60:
+        minutes = 0
+        hours += 1
+    if hours == 24:
+        hours = 0
+        days += 1
 
