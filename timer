@@ -8,7 +8,7 @@ hours = 0
 minutes = 0
 hundreths = 0
 seconds = 0
-warn =c.clear + '\n' * 15 + c.red + '                       [Press ctrl+c to quit]' + c.reset
+warn =c.clear + '\n' * 15 + c.cyan + '                       [Press ctrl+c to quit]' + c.reset
 form = '{}-{:02}:{:02}:{:02}.{:02}'
 
 print(c.clear)
@@ -19,7 +19,6 @@ while True:
     if hundreths == 100:
         hundreths = 0
         seconds += 1
-        print(str(seconds) + 'seconds')
     if seconds == 60:
         seconds = 0
         minutes += 1
