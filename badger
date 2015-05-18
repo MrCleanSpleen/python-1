@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import time as t
+import colors as c
+while True:
+    t.sleep(0.25)
+    print(c.random_color + 'Badger!!!!!!!!')
