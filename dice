@@ -6,6 +6,5 @@ import random as r
 print(c.clear)
 print('''Welcome to the Magical Dice Rolling Machine. Type roll to roll the dice.''')
 roll = input(c.green + '> ' + c.red)
-dice 
-
-
+dice = [
+'
