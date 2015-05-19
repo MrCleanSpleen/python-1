@@ -2,18 +2,33 @@
 import time as t
 import colors as c
 import random as r
+snake = '''
+
+                 /\ /\         /\ /\         /\ /\              _______   
+                 / / \ \       / / \ \       / / \ \             \   _  \  
+                / /   \ \     / /   \ \     / /   \ \            /  /_\  \ 
+                / /    \ \    / /    \ \    / /    \ \           
+               / /     \ \   / /     \ \   / /     \ \           \  \_/   \ 
+ ____________ / /       \ \ / /       \ \ / /       \ \___________\_____  /
+/_____/_____/ \/         \/ \/         \/ \/         \/_____/_____/     \/ 
+
+'''
 print(c.clear)
 while True:
     for count in range(4):
         for count in range(11):
-            t.sleep(0.4)
+            t.sleep(0.3)
             print(c.base3 + 'Badgers!!!!!!!!')
         for count in range(2):
             t.sleep(0.75)
             print(c.red + 'Muuuuusssh'+ c.base3 + 'rooooooom!')
     for count in range(1):
-        print(c.green + 'Argh! A Snake!')
+        print(c.clear)
+        print(snake)
         t.sleep(0.5)
+        print(c.green + 'Argh! A Snake!')
+        t.sleep(1.5)
         print(c.green + 'A Snaaaaaake!!!')
-        t.sleep(0.3)
+        t.sleep(2)
         print(c.green + 'Why does it have to be Snake?!?!')
+        t.sleep(1.5)
