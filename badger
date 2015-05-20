@@ -32,3 +32,4 @@ while True:
         t.sleep(2)
         print(c.green + 'Ooooooh, its a Snaaaaake!')
         t.sleep(1.5)
+        print(c.clear)
