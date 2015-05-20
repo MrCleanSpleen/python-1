@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+<<<<<<< HEAD
 import time as t
 import colors as c
 import random as r
@@ -40,4 +41,14 @@ dice = [
   -------
 
 
+=======
+import colors as c
+import time as t
+import random as r
+>>>>>>> f502c4afd1643e4cf9057ed0633d2a2b3bc1f4ea
 
+print(c.clear)
+print('''Welcome to the Magical Dice Rolling Machine. Type roll to roll the dice.''')
+roll = input(c.green + '> ' + c.red)
+dice = [
+'
