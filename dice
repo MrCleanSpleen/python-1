@@ -41,7 +41,7 @@ dice = [
 
 while True:
     question = input(c.green + '> ' + c.red)
-    die = (r.dice)
+    die = r.choice(dice)
     if question = 'roll'
-        print(c.green + dice)
+        print(c.green + die)
          
