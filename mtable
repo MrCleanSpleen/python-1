@@ -5,8 +5,10 @@ print(c.clear)
 print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm, 
 multiplication tables.''' + c.reset)
-
+t.sleep(2)
+print(c.clear + c.yellow + 'Which number?')
 number = input(c.red + '> ' + c.green)
-print(c.yellow + 'Here are the ' + number + ' multiplication tables.')
+print(c.yellow + 'Here are the multiplication tables for ' + number + '.'
 for number in range(1,13):
     print(number)
+    print(number * count)
