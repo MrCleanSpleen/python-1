@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import time as t
+import colors as c
+print(c.clear)
+print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm, 
+multiplication tables.''' + c.reset)
+
+number = input(c.red + '> ' + c.green)
+print(c.yellow + 'Here are the ' + number + ' multiplication tables.')
+for number in range(1,13):
+    print(number)
