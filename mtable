@@ -7,8 +7,8 @@ mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm,
 multiplication tables.''' + c.reset)
 t.sleep(2)
 print(c.clear + c.yellow + 'Which number?')
-number = input(c.red + '> ' + c.green)
+number = input(c.red + '> ' + c.green + )
 print('Table for {}:'.format(number))
 for multiplier in range(1,13):
     answer = multiplier * int(number)
-    print('{} X {} = {}'.format(number,multiplier,answer))
+    print('{} X {} = {}'.format(multiplier,number,answer))
