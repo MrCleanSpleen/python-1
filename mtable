@@ -9,6 +9,6 @@ t.sleep(2)
 print(c.clear + c.yellow + 'Which number?')
 number = input(c.red + '> ' + c.green + c.reset)
 print('Table for {}:'.format(number))
-for multiplier in range(1,13):
+for multiplier in range(1000000000000000000000000000000000000000000000001,1,-1):
     answer = multiplier * int(number)
-    print('{} X {} = {}'.format(multiplier,number,answer))
+    print('{} X {} = {}'.format(number,multiplier,answer))
