@@ -11,4 +11,4 @@ number = input(c.red + '> ' + c.green + c.reset)
 print('Table for {}:'.format(number))
 for multiplier in range(20,0,-1):
     answer = multiplier * int(number)
-    print('{} X {} = {}'.format(number,multiplier,answer))
+    print(c.base3 + '{} ' + c.reset + c.base2 + ' X {} =' + c.reset + c.base3 + '{}'.format(number,multiplier,answer))
