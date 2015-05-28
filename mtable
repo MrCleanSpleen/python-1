@@ -2,7 +2,7 @@
 import time as t
 import colors as c
 print(c.clear)
-print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm,
 multiplication tables.''' + c.reset)
 t.sleep(3)
 print(c.clear + c.yellow + 'Which number?')
