@@ -2,17 +2,12 @@
 import time as t
 import colors as c
 print(c.clear)
-print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm, 
+print(c.green +  '''Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 multiplication tables.''' + c.reset)
 t.sleep(3)
-while True:
-    print(c.clear + c.yellow + 'Which number?')
-    number = input(c.red + '> ' + c.green + c.reset)
-    print('Table for {}:'.format(number))
-    for multiplier in range(20,0,-1):
-        answer = multiplier * int(number)
-        print('{} X {} = {}'.format(number,multiplier,answer))
+print(c.clear + c.yellow + 'Which number?')
+number = input(c.red + '> ' + c.green + c.reset)
+print('Table for {}:'.format(number))
+for multiplier in range(20,0,-1):
+    answer = multiplier * int(number)
+    print('{} X {} = {}'.format(number,multiplier,answer))
