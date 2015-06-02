@@ -13,5 +13,9 @@ t.sleep(2)
 print(c.clear + c.reset)
 name = prompt('What is your name?')
 quest = prompt('What is your quest?')
-assyria = prompt('What is the capital of Assyria?')
 
+if name in ['Lancelot', 'Galahad']:
+    color = prompt('What is your favorite color?')
+    print(c.reset + 'Right, off you go then.')
+elif name == 'Robin':
+    
