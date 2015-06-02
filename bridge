@@ -18,4 +18,8 @@ if name in ['Lancelot', 'Galahad']:
     color = prompt('What is your favorite color?')
     print(c.reset + 'Right, off you go then.')
 elif name == 'Robin':
-    
+    assyria = prompt('What is the capital of Assyria?')
+    if assyria == Assur:
+        print('Right, off you go then.')
+    else:
+        print('You will now be cast into the gorge of Eternal Peril')
