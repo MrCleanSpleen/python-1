@@ -31,3 +31,9 @@ elif name == 'Arther':
         print('Right, off you go then.')
     else:
         print('You will now be cast into the Gorge of Eternal Peril.')
+else:
+     question = prompt('What is 5 x 12?')
+     if question == '60':
+        print('Right, off you go then.')
+     else:
+        print('You will now be cast into the Gorge of Eternal Peril.')
