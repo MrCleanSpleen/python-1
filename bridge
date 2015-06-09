@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import colors as c
 import time as t
+def live():
+    print('Right, off you go then.'  + c.reset)
+def die():
+    print('Thou art cast into the Gorge of Eternal Peril.')
 def prompt(question):
     print(question)
     answer = input(c.green + '> ' + c.red).lower()
@@ -18,26 +22,26 @@ t.sleep(1)
 if name in ['lancelot', 'galahad']:
     color = prompt('What is your favorite color?')
     if color in ['red','blue','green','orange','yellow','purple']:
-        print(c.reset + 'Right, off you go then.')
+        live()
     else:
-        print('You will now be cast into the Gorge of Eternal Peril.')
+        die()
 elif name == 'robin':
     assyria = prompt('What is the capital of Assyria?')
-    if assyria in ['assur','ashur']
-        print('Right, off you go then.')
+    if assyria in ['assur','ashur']:
+        live()
     else:
-        print('You will now be cast into the Gorge of Eternal Peril.')
+        die()
 elif name == 'arther':
     swallow = prompt('What is the airspeed velocity of an unladen swallow?')
     if swallow == 'what do you mean? african or european?':
         print('''What? I don't know that... AHHHHHHHHHHHHHHHHHH!!!!!''')
     elif swallow == 'slighty faster than that of a laden swallow':
-        print('Right, off you go then.')
+        live()
     else:
-        print('You will now be cast into the Gorge of Eternal Peril.')
+        die()
 else:
      question = prompt('What does your father smell like?')
      if question == 'elderberries':
-        print('Right, off you go then.')
+        live()
      else:
-        print('You will now be cast into the Gorge of Eternal Peril.')
+        die()
