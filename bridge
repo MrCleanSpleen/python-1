@@ -23,15 +23,15 @@ if name in ['lancelot', 'galahad']:
         print('You will now be cast into the Gorge of Eternal Peril.')
 elif name == 'robin':
     assyria = prompt('What is the capital of Assyria?')
-    if assyria == 'assur':
+    if assyria in ['assur','ashur']
         print('Right, off you go then.')
     else:
         print('You will now be cast into the Gorge of Eternal Peril.')
 elif name == 'arther':
     swallow = prompt('What is the airspeed velocity of an unladen swallow?')
-    if swallow == 'What do you mean? African or European?':
+    if swallow == 'what do you mean? african or european?':
         print('''What? I don't know that... AHHHHHHHHHHHHHHHHHH!!!!!''')
-    elif swallow == 'slighty faster than that of a laden swallow.':
+    elif swallow == 'slighty faster than that of a laden swallow':
         print('Right, off you go then.')
     else:
         print('You will now be cast into the Gorge of Eternal Peril.')
