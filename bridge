@@ -3,7 +3,7 @@ import colors as c
 import time as t
 def prompt(question):
     print(question)
-    answer = input(c.green + '> ' + c.red)
+    answer = input(c.green + '> ' + c.red).lower()
     print(c.reset)
     return answer
 print(c.clear + c.orange + '''Who would cross the bridge of Death
@@ -12,19 +12,23 @@ Must answer me these questions three
 t.sleep(2)
 print(c.clear + c.reset)
 name = prompt('What is your name?')
+t.sleep(1)
 quest = prompt('What is your quest?')
-
-if name in ['Lancelot', 'Galahad']:
+t.sleep(1)
+if name in ['lancelot', 'galahad']:
     color = prompt('What is your favorite color?')
-    print(c.reset + 'Right, off you go then.')
-elif name == 'Robin':
+    if color in ['red','blue','green','orange','yellow','purple']:
+        print(c.reset + 'Right, off you go then.')
+    else:
+        print('You will now be cast into the Gorge of Eternal Peril.')
+elif name == 'robin':
     assyria = prompt('What is the capital of Assyria?')
-    if assyria == 'Assur':
+    if assyria == 'assur':
         print('Right, off you go then.')
     else:
         print('You will now be cast into the Gorge of Eternal Peril.')
-elif name == 'Arther':
-    swallow = prompt('What is the air speed of an unladen swallow?')
+elif name == 'arther':
+    swallow = prompt('What is the airspeed velocity of an unladen swallow?')
     if swallow == 'What do you mean? African or European?':
         print('''What? I don't know that... AHHHHHHHHHHHHHHHHHH!!!!!''')
     elif swallow == 'slighty faster than that of a laden swallow.':
@@ -32,8 +36,8 @@ elif name == 'Arther':
     else:
         print('You will now be cast into the Gorge of Eternal Peril.')
 else:
-     question = prompt('What is 5 x 12?')
-     if question == '60':
+     question = prompt('What does your father smell like?')
+     if question == 'elderberries':
         print('Right, off you go then.')
      else:
         print('You will now be cast into the Gorge of Eternal Peril.')
