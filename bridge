@@ -37,7 +37,7 @@ elif name == 'arther':
         print('''What? I don't know that... AHHHHHHHHHHHHHHHHHH!!!!!''')
     elif swallow == 'slighty faster than that of a laden swallow':
         live()
-    elif swallow in ['24 mph','11 mps','24 miles per hour','11 meters per second']
+    elif swallow in ['24 mph','11 mps','24 miles per hour','11 meters per second']:
         live()
     else:
         die()
