@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import colors as c
 import time as t
+def 
 
 print(c.clear + c.magenta + '''Welcome to the Pink Fluffy Unicorn quiz.
 Let's test your knowledge to see what you've learned so far...

@@ -10,6 +10,7 @@ def prompt(question):
     answer = input(c.green + '> ' + c.red).lower()
     print(c.reset)
     return answer
+
 print(c.clear + c.orange + '''Who would cross the bridge of Death
 Must answer me these questions three
 'Ere the other side he see.''')
