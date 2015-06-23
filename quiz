@@ -31,8 +31,7 @@ def q2():
         return False
 
 def q3():
-    a3 = ask('Please use one word to describe the texture
-of their maaaaagical fur.')
+    a3 = ask('Please use one word to describe the texture of their maaaaagical fur.')
     if a3 == 'smiles':
         yes()
         return True
