@@ -38,4 +38,8 @@ def q3():
     else:
         no()
         return False
-
+q1()
+t.sleep(2)
+q2()
+t.sleep(2)
+q2()
