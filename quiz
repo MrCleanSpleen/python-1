@@ -41,4 +41,4 @@ t.sleep(2)
 q2()
 t.sleep(2)
 q3()
-print(c.green + 'Thank you for taking the PFU test. I hope you learned something
+print(c.green + 'Thank you for taking the PFU test. I hope you learned something.')
