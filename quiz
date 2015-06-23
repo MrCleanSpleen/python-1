@@ -2,6 +2,8 @@
 import colors as c
 import time as t
 from utils import ask
+score = 0
+
 def yes():
     print('You are correct!!!')
 
@@ -17,6 +19,7 @@ def q1():
     a1 = ask('What color are the unicorns?')
     if 'pink' in a1:
         yes()
+        score += 1
         return True
     no()
     return False
@@ -26,6 +29,7 @@ def q2():
     if 'rainbows' in a2:
         yes()
         return True
+        score += 1
     no()
     return False
 
@@ -34,6 +38,7 @@ def q3():
     if a3 == 'smiles':
         yes()
         return True
+        score += 1
     no()
     return False
 q1()
@@ -43,3 +48,5 @@ t.sleep(2)
 q3()
 t.sleep(2)
 print(c.green + 'Thank you for taking the Pink Fluffy Unicorn test. I hope you learned something.')
+t.sleep(2)
+print(c.red + 'Your score is ' + score + '.')
