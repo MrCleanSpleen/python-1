@@ -11,16 +11,32 @@ def no():
 print(c.clear + c.magenta + '''Welcome to the Pink Fluffy Unicorn quiz.
 Let's test your knowledge to see what you've learned so far...
 ''')
-t.sleep(2)
-a1 = ask('What color are the unicorns?')
-if 'pink' in a1:
-    yes()
-else:
-    no()
-t.sleep(2)
-a2 = ask('Where are they dancing?')
-if 'rainbows' in a2:
-    yes()
-else:
-    no()
+
+def q1(): 
+    a1 = ask('What color are the unicorns?')
+    if 'pink' in a1:
+        yes()
+        return True
+    else:
+        no()
+        return False
+
+def q2():
+    a2 = ask('Where are they dancing?')
+    if 'rainbows' in a2:
+        yes()
+        return True
+    else:
+        no()
+        return False
+
+def q3():
+    a3 = ask('Please use one word to describe the texture
+    of their maaaaagical fur.')
+    if a3 == 'smiles':
+        yes()
+        return True
+    else:
+        no()
+        return False
 
