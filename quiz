@@ -2,8 +2,8 @@
 import colors as c
 import time as t
 from utils import ask
-score = 0
 
+score = 0
 def yes():
     print('You are correct!!!')
 
