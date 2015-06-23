@@ -3,7 +3,6 @@ import colors as c
 import time as t
 from utils import ask
 
-score = 0
 def yes():
     print('You are correct!!!')
 
@@ -14,6 +13,8 @@ print(c.clear + c.magenta + '''Welcome to the Pink Fluffy Unicorn quiz.
 Let's test your knowledge to see what you've learned so far.
 ''')
 t.sleep(2)
+
+score = 0
 
 def q1(): 
     a1 = ask('What color are the unicorns?')
