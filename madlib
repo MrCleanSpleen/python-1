@@ -27,6 +27,8 @@ print(c.clear + c.cyan + """WELCOME TO MADLIBS! WE ARE ALWAYS YELLING AT YOU BEC
 answers = {}
 for key in words:
     desc = words[key].get('desc')
+if desc:
     print(desc)
-
+elif key.startswith('noun'):
+    print('Noun' + ':')
 
