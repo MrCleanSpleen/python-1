@@ -29,7 +29,7 @@ def q2():
 
 def q3():
     a3 =  ask("What is the name of the group of magicians that work for the Varden?")
-    if a3 == 'the wandering path':
+    if a3 == 'du vangr gata':
         yes()
         return True
     else:
