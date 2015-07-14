@@ -1,34 +1,34 @@
 #!/usr/bin/env python3
 import colors as c
 import time as t
+from utils import ask
+
+print(c.clear + c.cyan + """WELCOME TO MADLIBS! MY NAME IS LIB, AND I AM ALWAYS YELLING AT YOU BECAUSE I AM VERY MAD!""" + c.reset)
 
 text = '''
 Please send {noun1}! I am the sole survivor of a {noun2} crash in {country}.
 I have been stranded alone for {number} days and am starting to drink my own
-{bodily_fluid}. It tastes like {food}. I am constantly being attacked by 
-{animals} and I am {verb_ing} to death! If nobody rescues me, I fear I may never
-see my son, {male_celebrity}, and my wife, {female celebrity}. I just hope that 
+{bodily fluid}. It tastes like {food}. I am constantly being attacked by 
+{animals} and I am {a verb that ends in ing} to death! If nobody rescues me, I fear I may never
+see my son, {male celebrity}, and my wife, {female celebrity}. I just hope that 
 somebody finds my message-in-a-{noun3}.
 '''
 
 words = {
-    'noun1' : {},
-    'noun2' : {},
-    'country' : {},
-    'bodily_fluid' : {'desc': 'Any liquid like blood or urine'},
-    'animals' : {},
-    'a_verb_that_ends_in_ing' : {},
-    'male_celebrity' : {},
-    'female_celebrity' : {},
-    'noun3' : {}
+    'noun1' : None,
+    'noun2' : None,
+    'country' : None,
+    'number' : None,
+    'bodily fluid' : {'desc': 'Any liquid like blood or urine'},
+    'food' : None,
+    'animals' : None, 
+    'a verb that ends in ing' : None,
+    'male celebrity' : None,
+    'female celebrity' : None,
+    'noun3' : None
 }
-print(c.clear + c.cyan + """WELCOME TO MADLIBS! WE ARE ALWAYS YELLING AT YOU BECAUSE WERE ARE VERY MAD!""" + c.clear)
 
-answers = {}
-for key in words:
-    desc = words[key].get('desc')
-if desc:
-    print(desc)
-elif key.startswith('noun'):
-    print('Noun' + ':')
+for keyword in words: 
+    words[keyword] = ask(keyword.title().rstrip('0123456789') + ': ')
 
+print(c.clear + text.format(**words))
