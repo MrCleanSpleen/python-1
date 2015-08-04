@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+while True:
+    print(c.random_color() + 'Nyan',end=' '*r.randint(1,20))

@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+import colors as c
+print(c.red + 'Hello ' + c.blue +  'World')
