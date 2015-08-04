@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import colors as c
+
+def wrong():
+    print(c.red + 'I do not agree with you. I must kill you now.')
+
+print(c.clear + c.orange + 'Do you like Pancakes?')
+p = input(c.green + '> ' + c.red)
+if p == 'yes':
+    print(c.blue + 'Do you like French Toast?')
+else:
+    wrong()
+    
+    f = input(c.yellow + '> ' + c.blue) 
+    if f == 'yes':
+      print(c.purple + 'Do you like Waffles?')
+    else:
+        wrong()
+       
+      w = input(c.purple + '> ' + c.orange)
+      if w == 'yes':
+          print(c.green + 'I am glad that you do not dissagree with me')
+      else:
+          wrong()
+    
