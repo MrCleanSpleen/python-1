@@ -2,7 +2,7 @@
 import colors as c
 
 print(c.clear + c.orange + 'Do you like Pancakes?')
-p = input(c.green + '> ' + c.red).strip().lower
+p = input(c.green + '> ' + c.red)
 if p == 'yes':
     print(c.clear + c.blue + 'Do you like French Toast?')
     f = input(c.yellow + '> ' + c.blue) 
