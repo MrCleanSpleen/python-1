@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+import colors as c
+import time as t
+
+print(c.clear)
+while True:
+    for count in range(4):        
+        for count in range(12):
+            print(c.random_color() + 'Badger!!!')
+            t.sleep(0.33)
+        for count in range(2):
+            print(c.red + 'Muuusssshrooooom!')
+            t.sleep(0.75)
+    for count in range(1):
+        print(c.clear)
+        print(c.green + 'Arrghhh a Snake! Snake!')
+        t.sleep(0.5)
+        print('A Snaaaaaaaaake!')
+        t.sleep(1.5)
+        print('''Ooooooooooh, it's a Snaaaaaaaake!''')
+        t.sleep(2)
+        print(c.clear
+
