@@ -5,7 +5,7 @@ def live():
     print('Right, off you go then.')
 def die():
     print('You will now be cast into the Gorge of Eternal Peril.')
-edef ask(question):
+def ask(question):
     print(question)
     answer = input(c.green + '> ' + c.red).lower()
     print(c.reset)
@@ -25,7 +25,7 @@ if name in ['lancelot','galahad']:
         live()
     else:
         die()
-elif name = 'robin':
+elif name == 'robin':
     assyria = ask('What is the capital of Assyria?')
     if assyria in ['assur','ashur']:
         live()
@@ -33,5 +33,15 @@ elif name = 'robin':
         die()
 elif name == 'arther':
     swallow = ask('What is the air-speed velocity of an unladen swallow?')
-    if swallow in ['24 mph','
-    
+    if swallow in ['24 mph','11 meters per second','slightly faster than that of a laden swallow']:
+        live()
+    elif swallow == 'what do you mean? african or european?':
+        print('''What? I don't know that... AAAAAAAHHHH!!!''')
+    else:
+        die()
+else:
+    berry = ask('What does your father smell like?')
+    if berry == 'elderberries':
+        live()
+    else:
+        die()
