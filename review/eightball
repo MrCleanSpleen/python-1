@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+import time as t
+
+print(c.clear + c.green + 'What is your name?')
+name = input(c.green + '> ' + c.red)
+
+print(c.clear + '''Welcome to the Magical Magic
+Eight Ball. Please submit your questions below.''')
+
+answers = [
+'yes',
+'no',
+'maybe',
+'how should i know?',
+'thats a stupid question',
+'me no understand']
+
+while True:
+    question = input(c.green + '> ' + c.red)
+    answer = r.choice(answers)
+    print(answer)

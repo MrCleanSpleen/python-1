@@ -13,11 +13,11 @@ while True:
             t.sleep(0.75)
     for count in range(1):
         print(c.clear)
-        print(c.green + 'Arrghhh a Snake! Snake!')
+        print(c.green + 'Arrghhh a Snake! A Snake!')
         t.sleep(0.5)
         print('A Snaaaaaaaaake!')
         t.sleep(1.5)
         print('''Ooooooooooh, it's a Snaaaaaaaake!''')
         t.sleep(2)
-        print(c.clear
+        print(c.clear)
 
