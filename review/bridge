@@ -1,3 +1,37 @@
 #!/usr/bin/env python3
 import colors as c
 import time as t
+def live():
+    print('Right, off you go then.')
+def die():
+    print('You will now be cast into the Gorge of Eternal Peril.')
+edef ask(question):
+    print(question)
+    answer = input(c.green + '> ' + c.red).lower()
+    print(c.reset)
+    return answer
+
+print(c.clear + c.red + '''He who cross the Bridge of Death
+must answer me these questions 3
+'Ere the other side he see.''')
+t.sleep(3)
+print(c.reset)
+name = ask('What is your name?')
+t.sleep(2)
+quest = ask('What is your quest?')
+if name in ['lancelot','galahad']:
+    color = ask('What is your favorite color?')
+    if color == 'blue':
+        live()
+    else:
+        die()
+elif name = 'robin':
+    assyria = ask('What is the capital of Assyria?')
+    if assyria in ['assur','ashur']:
+        live()
+    else:
+        die()
+elif name == 'arther':
+    swallow = ask('What is the air-speed velocity of an unladen swallow?')
+    if swallow in ['24 mph','
+    
