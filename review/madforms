@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import colors as c
+import time as t
+from utils import ask
+
+print(c.clear + c.green + '''WELCOME TO MADFORM! PLEASE DON'T SUE ME MADLIB!''')
+
+text = '''
+a ba ab abdf ab dfhgsgdf {a} fdgfdhsh {g} dfsfdhjk
+'''
+words = {
+'a' : None,
+'g' : None,
+}
+
+
+for keyword in words: 
+    words[keyword] = ask(keyword.title().rstrip('0123456789') + ': ')
+
+
+print(c.clear + text.format(**words))
