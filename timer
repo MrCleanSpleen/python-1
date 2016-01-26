@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import colors as c
+import skilstak.colors as c
 import random as r
 import time as t
 
@@ -12,20 +12,22 @@ warn = c.clear + '\n' * 15 + c.green + '                       [Press ctrl+c to 
 form = '{}-{:02}:{:02}:{:02}.{:02}'
 
 print(c.clear)
-while True:
-    print(warn + ' '  + form.format(days,hours,minutes,seconds,hundreths))
-    t.sleep(0.01)
-    hundreths += 1
-    if hundreths == 100:
-        hundreths = 0
-        seconds += 1
-    if seconds == 60:
-        seconds = 0
-        minutes += 1
-    if minutes == 60:
-        minutes = 0
-        hours += 1
-    if hours == 24:
-        hours = 0
-        days += 1
-
+try:
+    while True:
+        print(warn + ' '  + form.format(days,hours,minutes,seconds,hundreths))
+        t.sleep(0.01)
+        hundreths += 1
+        if hundreths == 100:
+            hundreths = 0
+            seconds += 1
+        if seconds == 60:
+            seconds = 0
+            minutes += 1
+        if minutes == 60:
+            minutes = 0
+            hours += 1
+        if hours == 24:
+            hours = 0
+            days += 1
+except KeyboardInterrupt:
+    exit()
